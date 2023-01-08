@@ -1,12 +1,5 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyB4hm5tzprLPJwrYDFK4xzuwl7QlmAcHJQ",
-  authDomain: "bicycle-registration.firebaseapp.com",
-  databaseURL: "https://bicycle-registration-default-rtdb.firebaseio.com",
-  projectId: "bicycle-registration",
-  storageBucket: "bicycle-registration.appspot.com",
-  messagingSenderId: "59746204270",
-  appId: "1:59746204270:web:1ffc8fe84545b557dec47f",
-  measurementId: "G-LSRCPRX4VJ"
+  //get api key from firebase
 };
 firebase.initializeApp(firebaseConfig);
 
