@@ -1,0 +1,238 @@
+body{
+    padding:0;
+    margin: 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+div {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+#screen{
+    width:100vw;
+    height: 100vh;
+    background-size: cover;
+    /* background-position: center; */
+    text-align:center;
+    align-content: center;
+    transition:all 2s ease;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+#inventory{
+    position:absolute;
+    z-index: 1;
+    top:calc(100vh - 15vh);
+    left:0;
+    width: 100vw;
+    height:13vh;
+    display:none;
+    opacity: 0.8;
+    background:#eee;
+    padding:2vw
+}
+
+#inventoryContainer{
+    padding:1vw;
+    width:93vw;
+    height:11vh;
+    position: relative;
+    overflow-x: scroll;
+    /* overflow-y: hidden; */
+    border: 2px solid #dadada;
+    border-radius: 7px;
+}
+
+#inventoryContainer:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.keyboardContainer{
+    position:absolute;
+    padding:1vw 1vw 0 2vw;
+    bottom:0;
+    background-color: blue;
+    display: grid;
+}
+
+#popUp{
+    position:absolute;
+    z-index: 1;
+    top:0;
+    left:0;
+    width:99vw;
+    height:10vh;
+    padding: 0;
+    background-color: aqua;
+    display: none;
+}
+#popUp span{
+    float:left;
+}
+
+#popUpMessage{
+    font-size: 100%;
+}
+
+#popUpImage{
+    width:20vw;
+    height:10vh
+}
+
+.point{
+    position: absolute;
+    z-index: 1;
+    background-image: transparent;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.inventoryItem{
+    position: relative;
+    background-color: rgb(181, 252, 252);
+    width: 15vw;
+    height: 95%;
+    display: inline-block;
+    margin: 1vw;
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+    touch-action: none;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 1;
+}
+
+.item{
+    z-index: 1;
+    touch-action: none;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    position: absolute;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.piece{
+    float:left;
+    margin: 1vw;
+    background-color: aqua;
+}
+.correctLine{
+    float:left;
+    margin: 1vw;
+    background-color: yellow;
+}
+.selectedPiece{
+    float:left;
+    margin: 1vw;
+    background-color: greenyellow;
+}
+.selectedline{
+    float:left;
+    margin: 1vw;
+    background-color: lightgreen;
+}
+.letter{
+    float: left;
+    width: 8.5vw;
+    color: white;
+    font-weight: bold;
+    margin: 0.5vw;
+    font-size: 8.5vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.spacer{
+    float: left;
+    width: 5vw;
+}
+
+.pletter{
+    color: white;
+    font-weight: bold;
+    margin:.5vw;
+    text-align: center;
+}
+
+.vial{
+    margin: 5vw;
+    user-select: none;
+    touch-action: none;
+    box-sizing: border-box;
+    float: left;
+    background-image: url('images/testtube.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 1.8vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 0.8vh;
+}
+
+.vialLevel{
+    width: 100%;
+}
+
+.selectedVial {
+    border: 1vw solid yellow;
+}
+
+.appScreen{
+    width: 100vw;
+    height: 100vh;
+}
+
+#phoneScreen{
+    background-color: black;
+}
+
+#lockScreen{
+    display: none;
+}
+
+#statusBar{
+    width: 100vw;
+    height: 3svh;
+    top:0;
+    left:0;
+    position:absolute;
+    color: white;
+    z-index: 1;
+}
+
+#ctrlBar{
+    width: 100vw;
+    height: 5vh;
+    top:95vh;
+    left:0;
+    position:absolute;
+    color: white;
+    z-index: 1;
+}
+
